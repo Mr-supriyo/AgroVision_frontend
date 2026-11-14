@@ -60,9 +60,15 @@ export default function DashboardLayout() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className="badge badge-demo">
-                    Demonstration Farm Profile
-                  </span>
+                  {activeFarm.id?.startsWith('farm-custom') ? (
+                    <span className="badge badge-live">
+                      Registered Plot
+                    </span>
+                  ) : (
+                    <span className="badge badge-demo">
+                      Demo Profile
+                    </span>
+                  )}
                   <span style={{ fontSize: '0.78rem', color: 'var(--color-bright-cyan)', fontWeight: 600 }}>
                     {activeFarm.soilType}
                   </span>

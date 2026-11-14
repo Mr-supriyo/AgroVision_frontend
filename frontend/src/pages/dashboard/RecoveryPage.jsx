@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useFarm } from '../../context/FarmContext';
 import { recoveryService } from '../../services/recoveryService';
-import DemoBadge from '../../components/common/DemoBadge';
 import DataSourceCard from '../../components/common/DataSourceCard';
 import { 
   Activity, 
@@ -65,8 +64,7 @@ export default function RecoveryPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
-          <DemoBadge label="RECOVERY TRACKER" />
+        <div>
           <span className="badge badge-live">
             Status: {timelineData.currentStatus}
           </span>

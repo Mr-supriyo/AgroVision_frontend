@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useFarm } from '../../context/FarmContext';
 import { reportService } from '../../services/reportService';
-import DemoBadge from '../../components/common/DemoBadge';
 import { 
   Printer, 
   Download, 
@@ -103,10 +102,10 @@ export default function ReportsPage() {
                 Agro<span style={{ color: 'var(--color-agri-green)' }}>Vision</span>
               </div>
               <div style={{ fontSize: '0.78rem', color: 'var(--color-satellite-blue)', fontWeight: 700, letterSpacing: '0.04em', marginTop: '3px' }}>
-                A CLIMATE-INFORMED CROP ROTATION DECISION SUPPORT SYSTEM
+                Climate-Informed Crop Advisory & Adaptation Summary
               </div>
               <div style={{ fontSize: '0.72rem', color: 'var(--color-text-muted)' }}>
-                NASA Space Apps Challenge 2026 • Team Innovatrix
+                AgroVision Research & Advisory System • West Bengal
               </div>
             </div>
           </div>
@@ -114,7 +113,7 @@ export default function ReportsPage() {
           <div style={{ textAlign: 'right', fontSize: '0.8rem', color: 'var(--color-text-dark)' }}>
             <div><strong>Report Ref:</strong> {report.reportId}</div>
             <div><strong>Date:</strong> {report.generatedAt}</div>
-            <div style={{ marginTop: '0.25rem' }}><DemoBadge label="DEMO ADVISORY" /></div>
+            <div style={{ marginTop: '0.25rem' }}><span className="badge badge-demo">Advisory Summary</span></div>
           </div>
         </div>
 

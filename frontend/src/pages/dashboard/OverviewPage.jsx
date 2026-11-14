@@ -4,7 +4,6 @@ import { useFarm } from '../../context/FarmContext';
 import { climateService } from '../../services/climateService';
 import { riskService } from '../../services/riskService';
 import { satelliteService } from '../../services/satelliteService';
-import DemoBadge from '../../components/common/DemoBadge';
 import DataSourceCard from '../../components/common/DataSourceCard';
 import { 
   CloudSun, 
@@ -75,8 +74,7 @@ export default function OverviewPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
-          <DemoBadge label="SIMULATED NASA FEED" />
+        <div>
           <Link to="/app/crop-planner" className="btn btn-primary">
             <Repeat size={16} />
             <span>Plan Crop Rotation</span>

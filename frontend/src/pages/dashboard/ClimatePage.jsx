@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useFarm } from '../../context/FarmContext';
 import { climateService } from '../../services/climateService';
-import DemoBadge from '../../components/common/DemoBadge';
 import DataSourceCard from '../../components/common/DataSourceCard';
 import { 
   LineChart, 
@@ -48,17 +47,13 @@ export default function ClimatePage() {
 
   return (
     <div>
-      <div className="flex items-center justify-between" style={{ marginBottom: '1.5rem', flexWrap: 'wrap', gap: '0.75rem' }}>
-        <div>
-          <h1 style={{ fontSize: '1.85rem', color: 'var(--color-dark-blue)', marginBottom: '0.25rem' }}>
-            Climate Intelligence (NASA POWER)
-          </h1>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.92rem' }}>
-            10-Year historical monthly normals and seasonal anomalies for <strong>{activeFarm.district}</strong> ({data?.coordinates}).
-          </p>
-        </div>
-
-        <DemoBadge label="NASA POWER (0.5° GRID)" />
+      <div style={{ marginBottom: '1.5rem' }}>
+        <h1 style={{ fontSize: '1.85rem', color: 'var(--color-dark-blue)', marginBottom: '0.25rem' }}>
+          Climate Intelligence
+        </h1>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.92rem' }}>
+          10-Year historical monthly normals and seasonal anomalies for <strong>{activeFarm.district}</strong> ({data?.coordinates}).
+        </p>
       </div>
 
       {/* Seasonal Anomalies Strip */}

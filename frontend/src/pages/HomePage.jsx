@@ -39,7 +39,7 @@ export default function HomePage() {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(53, 197, 244, 0.15)', border: '1px solid rgba(53, 197, 244, 0.3)', padding: '0.4rem 0.85rem', borderRadius: 'var(--radius-full)', marginBottom: '1.25rem' }}>
                 <Sparkles size={16} style={{ color: 'var(--color-lime-green)' }} />
                 <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--color-bright-cyan)', letterSpacing: '0.04em' }}>
-                  NASA SPACE APPS CHALLENGE 2026 • TEAM INNOVATRIX
+                  CLIMATE-INFORMED DECISION SUPPORT • WEST BENGAL
                 </span>
               </div>
 

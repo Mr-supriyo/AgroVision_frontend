@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useFarm } from '../../context/FarmContext';
 import { cropService } from '../../services/cropService';
-import DemoBadge from '../../components/common/DemoBadge';
 import DataSourceCard from '../../components/common/DataSourceCard';
 import { 
   Repeat, 
@@ -13,8 +12,7 @@ import {
   CheckCircle, 
   AlertCircle,
   HelpCircle,
-  ArrowRight,
-  Sparkles
+  ArrowRight
 } from 'lucide-react';
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -83,21 +81,13 @@ export default function CropPlannerPage() {
   return (
     <div>
       {/* Header */}
-      <div className="flex items-center justify-between" style={{ marginBottom: '1.5rem', flexWrap: 'wrap', gap: '0.75rem' }}>
-        <div>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: 'var(--color-agri-green)', fontWeight: 700, fontSize: '0.82rem', marginBottom: '0.2rem' }}>
-            <Sparkles size={14} />
-            <span>CORE DECISION ENGINE</span>
-          </div>
-          <h1 style={{ fontSize: '1.85rem', color: 'var(--color-dark-blue)', marginBottom: '0.25rem' }}>
-            Crop Rotation & Adaptation Planner
-          </h1>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.92rem' }}>
-            Evaluate your 12-month farming sequence against NASA climate data to break monoculture and improve soil resilience.
-          </p>
-        </div>
-
-        <DemoBadge label="BCKV AGRONOMIC RULES" />
+      <div style={{ marginBottom: '1.5rem' }}>
+        <h1 style={{ fontSize: '1.85rem', color: 'var(--color-dark-blue)', marginBottom: '0.25rem' }}>
+          Crop Rotation & Adaptation Planner
+        </h1>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.92rem' }}>
+          Evaluate your 12-month farming sequence against NASA climate data to break monoculture and improve soil resilience.
+        </p>
       </div>
 
       {/* 1. INTERACTIVE 12-MONTH CROP CALENDAR INPUT */}

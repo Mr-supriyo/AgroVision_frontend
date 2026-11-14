@@ -102,8 +102,8 @@ export default function Sidebar({ isOpen, onClose }) {
           fontSize: '0.75rem',
           color: 'var(--color-text-light)'
         }}>
-          <div>West Bengal Pilot Focus</div>
-          <div style={{ color: 'var(--color-lime-green)', fontWeight: 600 }}>NASA Space Apps 2026</div>
+          <div>West Bengal Pilot Region</div>
+          <div style={{ color: 'var(--color-bright-cyan)', fontWeight: 600 }}>Agricultural Decision Engine</div>
         </div>
       </aside>
     </>

@@ -87,7 +87,7 @@ export default function Navbar({ onToggleSidebar }) {
                 fontWeight: 600,
                 marginTop: '2px'
               }}>
-                NASA Space Apps 2026
+                Space Data to Farm Decisions
               </span>
             </div>
           </Link>

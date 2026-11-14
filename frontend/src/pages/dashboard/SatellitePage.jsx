@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useFarm } from '../../context/FarmContext';
 import { satelliteService } from '../../services/satelliteService';
-import DemoBadge from '../../components/common/DemoBadge';
 import DataSourceCard from '../../components/common/DataSourceCard';
 import { 
   LineChart, 
@@ -43,17 +42,13 @@ export default function SatellitePage() {
 
   return (
     <div>
-      <div className="flex items-center justify-between" style={{ marginBottom: '1.5rem', flexWrap: 'wrap', gap: '0.75rem' }}>
-        <div>
-          <h1 style={{ fontSize: '1.85rem', color: 'var(--color-dark-blue)', marginBottom: '0.25rem' }}>
-            Satellite Earth Observation Feeds
-          </h1>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.92rem' }}>
-            Multi-mission observations from <strong>GPM IMERG</strong>, <strong>SMAP</strong>, and <strong>MODIS/HLS</strong> for {activeFarm.district}.
-          </p>
-        </div>
-
-        <DemoBadge label="SATELLITE DEMO DATA" />
+      <div style={{ marginBottom: '1.5rem' }}>
+        <h1 style={{ fontSize: '1.85rem', color: 'var(--color-dark-blue)', marginBottom: '0.25rem' }}>
+          Satellite Environmental Monitoring
+        </h1>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.92rem' }}>
+          Multi-mission observations from <strong>GPM IMERG</strong>, <strong>SMAP</strong>, and <strong>MODIS/HLS</strong> for {activeFarm.district}.
+        </p>
       </div>
 
       {/* THREE MISSIONS SUMMARY CARDS */}

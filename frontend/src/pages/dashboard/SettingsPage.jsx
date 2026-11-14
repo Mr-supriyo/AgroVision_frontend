@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useFarm } from '../../context/FarmContext';
-import DemoBadge from '../../components/common/DemoBadge';
 import { 
   Settings, 
   User, 
@@ -39,17 +38,13 @@ export default function SettingsPage() {
 
   return (
     <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-      <div className="flex items-center justify-between" style={{ marginBottom: '1.5rem', flexWrap: 'wrap', gap: '0.75rem' }}>
-        <div>
-          <h1 style={{ fontSize: '1.85rem', color: 'var(--color-dark-blue)', marginBottom: '0.25rem' }}>
-            Settings & Preferences
-          </h1>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.92rem' }}>
-            Customize your farm measurement units, language, and regional preferences.
-          </p>
-        </div>
-
-        <DemoBadge label="CONFIG SETTINGS" />
+      <div style={{ marginBottom: '1.5rem' }}>
+        <h1 style={{ fontSize: '1.85rem', color: 'var(--color-dark-blue)', marginBottom: '0.25rem' }}>
+          Settings & Preferences
+        </h1>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.92rem' }}>
+          Customize your farm measurement units, language, and regional preferences.
+        </p>
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>

@@ -22,7 +22,7 @@ export const reportService = {
       rotation: rotation.data,
       nasaMetadata: {
         sources: 'NASA POWER, GPM IMERG, SMAP, Landsat/MODIS HLS',
-        institution: 'Team Innovatrix | NASA Space Apps Challenge 2026',
+        institution: 'AgroVision Agricultural Decision Support Platform',
         officialTagline: 'From Space Data to Farm Recovery Decisions',
         disclaimer: 'This advisory report synthesizes NASA satellite Earth observations with local agro-ecological guidelines. It provides decision-support context for farmers and field workers. Ground verification is recommended.'
       }
